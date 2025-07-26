@@ -1,1 +1,26 @@
-// app global css in SCSS form
+/* src/css/app.scss */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Noto+Sans+SC:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+.font-tech {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.hover-lift {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.1);
+}
+
+.ghost-card {
+  opacity: 0.5;
+  background: #2c3e50;
+  border: 2px dashed #00ffff;
+}
